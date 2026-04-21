@@ -48,6 +48,12 @@ const corsOptions = {
 
 // lala abhi bhi moka hai sudharja harsha
 
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    res.status(500).json({ error: err.message });
+});
+
 app.use(cors(corsOptions));
 app.use(apiLogger);
 
