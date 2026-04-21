@@ -46,6 +46,8 @@ const corsOptions = {
 //   origin: "*",
 // };
 
+// Testing CodeRabbit review
+
 app.use(cors(corsOptions));
 app.use(apiLogger);
 
